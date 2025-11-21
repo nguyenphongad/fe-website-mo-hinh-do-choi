@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { toast } from "sonner";
 import { Footer } from "../components/Footer";
+import accountsData from "../data_samples/accounts.json";
 
 export function meta() {
   return [
@@ -36,11 +37,8 @@ export default function Login() {
 
       // Simulate API call delay
       await new Promise(resolve => setTimeout(resolve, 1000));
-
-      const response = await fetch('/data_samples/accounts.json');
-      const accounts = await response.json();
       
-      const user = accounts.find((acc) => 
+      const user = accountsData.find((acc) => 
         acc.email === email && acc.password === password
       );
 
@@ -155,7 +153,6 @@ export default function Login() {
         </div>
       </main>
       
-      <Footer />
     </div>
   );
 }

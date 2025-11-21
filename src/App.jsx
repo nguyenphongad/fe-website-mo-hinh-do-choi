@@ -8,6 +8,8 @@ import ProductDetailPage from './pages/productDetailPage'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import "./styles/main.scss"
+import { FloatingButtons } from './components/FloatingButtons'
+import { Toaster } from 'sonner'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +21,14 @@ function App() {
       </header>
 
       <main>
+        <Toaster
+          position='bottom-center'
+          richColors
+          
+
+
+        />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
@@ -29,6 +39,8 @@ function App() {
       </main>
       <footer>
         <Footer />
+
+        <FloatingButtons />
       </footer>
     </BrowserRouter>
   )

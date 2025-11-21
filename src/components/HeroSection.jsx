@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import productsData from "../data_samples/products.json";
 
 export function HeroSection() {
   const [featuredProduct, setFeaturedProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchFeaturedProduct = async () => {
+    const loadFeaturedProduct = async () => {
       try {
-        const response = await fetch('/data_samples/products.json');
-        const products = await response.json();
+        // Simulate loading delay
+        await new Promise(resolve => setTimeout(resolve, 1000));
         // Lấy sản phẩm đầu tiên làm sản phẩm nổi bật
-        setFeaturedProduct(products[0]);
+        setFeaturedProduct(productsData[0]);
       } catch (error) {
         console.error('Error loading featured product:', error);
       } finally {
@@ -19,7 +20,7 @@ export function HeroSection() {
       }
     };
 
-    fetchFeaturedProduct();
+    loadFeaturedProduct();
   }, []);
 
   const formatPrice = (price) => {

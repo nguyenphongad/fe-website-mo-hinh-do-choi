@@ -4,6 +4,7 @@ import { Tabs, Rate } from "antd";
 import { toast } from "sonner";
 import { Footer } from "../components/Footer";
 import { ReviewCard } from "../components/products/ReviewCard";
+import productsData from "../data_samples/products.json";
 
 export function meta() {
   return [
@@ -56,13 +57,12 @@ export default function ProductDetail() {
   ];
 
   useEffect(() => {
-    const fetchProduct = async () => {
+    const loadProduct = async () => {
       try {
-        await new Promise(resolve => setTimeout(resolve, 800));
+        // Simulate loading delay
+        await new Promise(resolve => setTimeout(resolve, 1000));
         
-        const response = await fetch('/data_samples/products.json');
-        const products = await response.json();
-        const foundProduct = products.find(p => p.id === id);
+        const foundProduct = productsData.find(p => p.id === id);
         
         setProduct(foundProduct);
         setReviews(mockReviews);
@@ -73,7 +73,7 @@ export default function ProductDetail() {
       }
     };
 
-    fetchProduct();
+    loadProduct();
   }, [id]);
 
   const formatPrice = (price) => {
@@ -559,7 +559,6 @@ export default function ProductDetail() {
         )}
       </main>
       
-      <Footer />
     </div>
   );
 }

@@ -226,8 +226,6 @@ export default function Cart() {
         </div>
       </main>
       
-      <Footer />
-      <FloatingButtons />
     </div>
   );
 }

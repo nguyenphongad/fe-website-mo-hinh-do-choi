@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import accountsData from "../data_samples/accounts.json";
 
 export function meta() {
   return [
@@ -84,10 +85,7 @@ const Register = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       // Check if email already exists
-      const response = await fetch('/data_samples/accounts.json');
-      const accounts = await response.json();
-      
-      const existingUser = accounts.find(acc => acc.email === formData.email);
+      const existingUser = accountsData.find(acc => acc.email === formData.email);
       if (existingUser) {
         setError("Email này đã được sử dụng");
         return;
@@ -95,7 +93,7 @@ const Register = () => {
 
       // Create new user object
       const newUser = {
-        id: String(accounts.length + 1),
+        id: String(accountsData.length + 1),
         email: formData.email,
         password: formData.password,
         name: `${formData.firstName} ${formData.lastName}`,
@@ -132,7 +130,6 @@ const Register = () => {
 
   return (
     <div className="home-page">
-      <Header />
       
       <main className="container">
         <div className="login-section">
@@ -290,7 +287,6 @@ const Register = () => {
         </div>
       </main>
       
-      <Footer />
     </div>
   );
 }

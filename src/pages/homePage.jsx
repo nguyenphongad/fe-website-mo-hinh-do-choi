@@ -4,6 +4,7 @@ import { SearchBar } from "../components/SearchBar";
 import { HeroSection } from "../components/HeroSection";
 import { ProductCard, ProductSkeleton } from "../components/products/ProductCard";
 import { Footer } from "../components/Footer";
+import productsData from "../data_samples/products.json";
 
 export function meta() {
   return [
@@ -17,14 +18,11 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const loadProducts = async () => {
       try {
         // Simulate loading delay
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
-        const response = await fetch('/data_samples/products.json');
-        const data = await response.json();
-        setProducts(data);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        setProducts(productsData);
       } catch (error) {
         console.error('Error loading products:', error);
       } finally {
@@ -32,7 +30,7 @@ export default function Home() {
       }
     };
 
-    fetchProducts();
+    loadProducts();
   }, []);
 
   return (
@@ -66,7 +64,6 @@ export default function Home() {
         </section>
       </main>
       
-      <Footer />
     </div>
   );
 }
