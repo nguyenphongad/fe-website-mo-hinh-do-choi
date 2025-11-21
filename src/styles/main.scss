@@ -1,0 +1,152 @@
+// Import component and page styles FIRST
+@use 'components/header';
+@use 'components/product-card';
+@use 'components/hero';
+@use 'components/search-bar';
+@use 'components/modal';
+@use 'components/footer';
+@use 'components/review-card';
+@use 'components/floating-buttons';
+@use 'pages/login';
+@use 'pages/home';
+@use 'pages/error';
+@use 'pages/product-detail';
+@use 'pages/cart';
+
+// Then import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// Variables
+:root {
+  --primary-color: #FFC65A;
+  --primary-hover: #FFB830;
+  --secondary-color: #64748b;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+  --white: #ffffff;
+  --border-radius: 8px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--gray-800);
+  background-color: var(--gray-50);
+}
+
+// Utility classes
+.container {
+//   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 60px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  }
+  
+  &.btn-secondary {
+    background-color: var(--white);
+    color: var(--gray-700);
+    border: 1px solid var(--gray-300);
+    
+    &:hover {
+      background-color: var(--gray-50);
+    }
+  }
+  
+  &.btn-danger {
+    background-color: var(--danger-color);
+    color: var(--white);
+    
+    &:hover {
+      background-color: #dc2626;
+    }
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  
+  &.grid-1 { grid-template-columns: 1fr; }
+  &.grid-2 { grid-template-columns: repeat(2, 1fr); }
+  &.grid-3 { grid-template-columns: repeat(3, 1fr); }
+  &.grid-4 { grid-template-columns: repeat(4, 1fr); }
+  
+  @media (max-width: 768px) {
+    &.grid-2, &.grid-3, &.grid-4 { 
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    &.grid-3, &.grid-4 { 
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    &.grid-4 { 
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+}
+
+// Animations
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+.toast_alert{
+    padding: 20px;
+}

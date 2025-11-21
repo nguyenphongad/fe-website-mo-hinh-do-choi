@@ -1,0 +1,328 @@
+[
+  {
+    "id": "1",
+    "name": "Gundam RX-78-2 Ver.Ka",
+    "brand": "Bandai",
+    "category": "Gundam",
+    "price": 1500000,
+    "originalPrice": 1800000,
+    "discount": 17,
+    "images": [
+      "https://i.postimg.cc/Gm4CRyff/46852-4573102635372-1-2d5b7bcd3a4a4d919c6bd81368679cc5-master-removebg-preview.png",
+      "https://i.postimg.cc/Gm4CRyff/46852-4573102635372-1-2d5b7bcd3a4a4d919c6bd81368679cc5-master-removebg-preview.png",
+      "https://i.postimg.cc/Gm4CRyff/46852-4573102635372-1-2d5b7bcd3a4a4d919c6bd81368679cc5-master-removebg-preview.png"
+    ],
+    "description": "Mô hình Gundam RX-78-2 Ver.Ka tỉ lệ 1/100, chất lượng cao với khớp nối linh hoạt",
+    "specifications": {
+      "scale": "1/100",
+      "height": "18cm",
+      "material": "Plastic",
+      "difficulty": "Intermediate"
+    },
+    "stock": 15,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["gundam", "mecha", "bandai", "popular"]
+  },
+  {
+    "id": "2",
+    "name": "Figure Nezuko Kamado Premium",
+    "brand": "Good Smile Company",
+    "category": "Anime Figure",
+    "price": 2200000,
+    "originalPrice": 2500000,
+    "discount": 12,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Figure Nezuko Kamado từ anime Demon Slayer, chi tiết tinh xảo với hiệu ứng ánh sáng",
+    "specifications": {
+      "scale": "1/8",
+      "height": "22cm",
+      "material": "PVC, ABS",
+      "difficulty": "Display Only"
+    },
+    "stock": 8,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["anime", "demon-slayer", "figure", "nezuko"]
+  },
+  {
+    "id": "3",
+    "name": "Transformers Optimus Prime Masterpiece",
+    "brand": "Takara Tomy",
+    "category": "Transformers",
+    "price": 3500000,
+    "originalPrice": 3500000,
+    "discount": 0,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Optimus Prime Masterpiece với khả năng biến hình hoàn hảo từ robot thành xe tải",
+    "specifications": {
+      "scale": "Masterpiece",
+      "height": "28cm",
+      "material": "Die-cast, Plastic",
+      "difficulty": "Advanced"
+    },
+    "stock": 0,
+    "status": "active",
+    "isComingSoon": true,
+    "releaseDate": "2024-03-15",
+    "tags": ["transformers", "optimus-prime", "masterpiece", "coming-soon"]
+  },
+  {
+    "id": "4",
+    "name": "Gundam Barbatos Lupus Rex MG",
+    "brand": "Bandai",
+    "category": "Gundam",
+    "price": 1800000,
+    "originalPrice": 2000000,
+    "discount": 10,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Mô hình Gundam Barbatos Lupus Rex Master Grade với chi tiết nội khung kim loại",
+    "specifications": {
+      "scale": "1/100",
+      "height": "19cm",
+      "material": "Plastic, Metal Frame",
+      "difficulty": "Advanced"
+    },
+    "stock": 12,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["gundam", "barbatos", "mg", "iron-blooded-orphans"]
+  },
+  {
+    "id": "5",
+    "name": "Dragon Ball Z Goku Super Saiyan",
+    "brand": "Figuarts",
+    "category": "Anime Figure",
+    "price": 1600000,
+    "originalPrice": 1600000,
+    "discount": 0,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Figure Goku Super Saiyan với khớp nối linh hoạt và nhiều phụ kiện",
+    "specifications": {
+      "scale": "1/10",
+      "height": "16cm",
+      "material": "PVC, ABS",
+      "difficulty": "Display Only"
+    },
+    "stock": 25,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["dragonball", "goku", "super-saiyan", "action-figure"]
+  },
+  {
+    "id": "6",
+    "name": "BMW M3 GTR Tuning Model",
+    "brand": "AutoArt",
+    "category": "Mô hình xe",
+    "price": 2800000,
+    "originalPrice": 3200000,
+    "discount": 13,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Mô hình xe BMW M3 GTR tỷ lệ 1/18 với chi tiết nội thất hoàn chỉnh",
+    "specifications": {
+      "scale": "1/18",
+      "height": "25cm",
+      "material": "Die-cast Metal",
+      "difficulty": "Display Only"
+    },
+    "stock": 6,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["bmw", "racing-car", "die-cast", "tuning"]
+  },
+  {
+    "id": "7",
+    "name": "Attack on Titan Eren Yeager",
+    "brand": "Kotobukiya",
+    "category": "Anime Figure",
+    "price": 2600000,
+    "originalPrice": 2600000,
+    "discount": 0,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Figure Eren Yeager trong trang phục Survey Corps với ODM Gear",
+    "specifications": {
+      "scale": "1/8",
+      "height": "24cm",
+      "material": "PVC, ABS",
+      "difficulty": "Display Only"
+    },
+    "stock": 0,
+    "status": "active",
+    "isComingSoon": true,
+    "releaseDate": "2024-04-20",
+    "tags": ["attack-on-titan", "eren", "survey-corps", "coming-soon"]
+  },
+  {
+    "id": "8",
+    "name": "Gundam Strike Freedom Perfect Grade",
+    "brand": "Bandai",
+    "category": "Gundam",
+    "price": 4500000,
+    "originalPrice": 5000000,
+    "discount": 10,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Perfect Grade Strike Freedom với hệ thống LED và khung kim loại",
+    "specifications": {
+      "scale": "1/60",
+      "height": "30cm",
+      "material": "Plastic, Metal Frame, LED",
+      "difficulty": "Expert"
+    },
+    "stock": 3,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["gundam", "strike-freedom", "perfect-grade", "led", "premium"]
+  },
+  {
+    "id": "9",
+    "name": "Transformers Bumblebee Movie Edition",
+    "brand": "Studio Series",
+    "category": "Transformers",
+    "price": 1200000,
+    "originalPrice": 1400000,
+    "discount": 14,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Bumblebee phiên bản phim 2018 với khả năng biến hình chi tiết",
+    "specifications": {
+      "scale": "Deluxe",
+      "height": "15cm",
+      "material": "Plastic",
+      "difficulty": "Intermediate"
+    },
+    "stock": 18,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["transformers", "bumblebee", "movie", "autobot"]
+  },
+  {
+    "id": "10",
+    "name": "Ferrari F40 Classic Model",
+    "brand": "Bburago",
+    "category": "Mô hình xe",
+    "price": 850000,
+    "originalPrice": 1000000,
+    "discount": 15,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Mô hình Ferrari F40 tỷ lệ 1/24 với chi tiết động cơ có thể mở",
+    "specifications": {
+      "scale": "1/24",
+      "height": "18cm",
+      "material": "Die-cast Metal, Plastic",
+      "difficulty": "Display Only"
+    },
+    "stock": 15,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["ferrari", "f40", "supercar", "classic"]
+  },
+  {
+    "id": "11",
+    "name": "One Piece Luffy Gear 5",
+    "brand": "Megahouse",
+    "category": "Anime Figure",
+    "price": 3200000,
+    "originalPrice": 3200000,
+    "discount": 0,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Figure Monkey D. Luffy trong form Gear 5 với hiệu ứng đặc biệt",
+    "specifications": {
+      "scale": "1/8",
+      "height": "26cm",
+      "material": "PVC, ABS",
+      "difficulty": "Display Only"
+    },
+    "stock": 0,
+    "status": "active",
+    "isComingSoon": true,
+    "releaseDate": "2024-05-10",
+    "tags": ["one-piece", "luffy", "gear-5", "coming-soon", "premium"]
+  },
+  {
+    "id": "12",
+    "name": "Gundam Nu Ver.Ka Real Grade",
+    "brand": "Bandai",
+    "category": "Gundam",
+    "price": 1100000,
+    "originalPrice": 1300000,
+    "discount": 15,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Real Grade Nu Gundam Ver.Ka với fin funnel effects",
+    "specifications": {
+      "scale": "1/144",
+      "height": "13cm",
+      "material": "Plastic",
+      "difficulty": "Advanced"
+    },
+    "stock": 22,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["gundam", "nu-gundam", "real-grade", "ver-ka"]
+  },
+  {
+    "id": "13",
+    "name": "Lamborghini Aventador SVJ",
+    "brand": "Maisto",
+    "category": "Mô hình xe",
+    "price": 650000,
+    "originalPrice": 750000,
+    "discount": 13,
+    "images": [
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg",
+      "https://jola.vn/cdn/720/Article/o_wEjh0eC/ecwceqwe.jpg"
+    ],
+    "description": "Mô hình Lamborghini Aventador SVJ tỷ lệ 1/18 màu cam neon",
+    "specifications": {
+      "scale": "1/18",
+      "height": "24cm",
+      "material": "Die-cast Metal, Plastic",
+      "difficulty": "Display Only"
+    },
+    "stock": 9,
+    "status": "active",
+    "isComingSoon": false,
+    "releaseDate": null,
+    "tags": ["lamborghini", "aventador", "svj", "supercar"]
+  }
+]

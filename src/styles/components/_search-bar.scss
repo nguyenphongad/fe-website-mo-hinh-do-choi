@@ -1,0 +1,306 @@
+.search-bar {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  
+  &__container {
+    display: flex;
+    gap: 12px;
+    margin: 0 auto;
+  }
+  
+  &__input-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  &__icon {
+    position: absolute;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    color: var(--gray-400);
+    z-index: 1;
+  }
+  
+  &__input {
+    width: 100%;
+    padding: 16px 16px 16px 48px;
+    border: 2px solid var(--gray-200);
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(255, 198, 90, 0.1);
+    }
+    
+    &::placeholder {
+      color: var(--gray-400);
+      transition: all 0.1s ease;
+      font-family: monospace; // For consistent character spacing
+    }
+  }
+  
+  &__filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+    background-color: var(--white);
+    border: 2px solid var(--gray-200);
+    border-radius: 12px;
+    color: var(--gray-700);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    
+    &:hover {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+      background-color: #fff8e1;
+      transform: translateY(-1px);
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+    
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  &__filter-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary-color);
+    color: var(--gray-800);
+    font-size: 12px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounceIn 0.3s ease;
+  }
+}
+
+// Filter Modal Content
+.filter-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.filter-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  
+  .filter-modal__clear,
+  .filter-modal__apply {
+    flex: 1;
+  }
+}
+
+// Filter Sections
+.filter-section {
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 16px;
+  }
+  
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+// Custom Checkbox
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateX(4px);
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  &__checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gray-300);
+    border-radius: 4px;
+    margin-right: 12px;
+    position: relative;
+    transition: all 0.2s ease;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 6px;
+      height: 10px;
+      border: solid var(--white);
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+  }
+  
+  input[type="checkbox"]:checked + &__checkmark {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+  
+  &__label {
+    color: var(--gray-700);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  &__count {
+    color: var(--gray-400);
+    font-size: 14px;
+  }
+  
+  &:hover &__checkmark {
+    border-color: var(--primary-color);
+  }
+}
+
+// Custom Radio
+.filter-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateX(4px);
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  &__checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gray-300);
+    border-radius: 50%;
+    margin-right: 12px;
+    position: relative;
+    transition: all 0.2s ease;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--white);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+  }
+  
+  input[type="radio"]:checked + &__checkmark {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+  
+  &__label {
+    color: var(--gray-700);
+    font-weight: 500;
+  }
+  
+  &:hover &__checkmark {
+    border-color: var(--primary-color);
+  }
+}
+
+// Animations
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Add cursor animation for typewriter effect
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.search-bar__input::placeholder {
+  animation: none;
+  
+  // Add blinking cursor effect when typing stops
+  &:not(:focus) {
+    position: relative;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .search-bar {
+    &__container {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  
+  .filter-modal-actions {
+    flex-direction: column;
+  }
+}

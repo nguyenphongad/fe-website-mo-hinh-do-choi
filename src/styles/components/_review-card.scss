@@ -1,0 +1,120 @@
+.review-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+  margin-bottom: 16px;
+  
+  &__header {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  &__avatar {
+    flex-shrink: 0;
+    
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  
+  &__meta {
+    flex: 1;
+  }
+  
+  &__author {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 4px;
+  }
+  
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    .stars {
+      display: flex;
+      gap: 2px;
+      
+      .star {
+        width: 16px;
+        height: 16px;
+        color: var(--primary-color);
+        
+        &:not(.filled) {
+          color: var(--gray-300);
+        }
+      }
+    }
+    
+    .date {
+      font-size: 14px;
+      color: var(--gray-500);
+    }
+  }
+  
+  &__content {
+    margin-bottom: 16px;
+    
+    p {
+      color: var(--gray-700);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+  }
+  
+  &__images {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  &__footer {
+    border-top: 1px solid var(--gray-100);
+    padding-top: 12px;
+    
+    .helpful-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: none;
+      color: var(--gray-600);
+      font-size: 14px;
+      cursor: pointer;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background-color: var(--gray-100);
+        color: var(--primary-color);
+      }
+      
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "email": "admin@toystore.com",
+    "password": "123456",
+    "name": "Admin User",
+    "avatar": "https://heucollege.edu.vn/upload/2025/10/anh-gai-dep-xinh-010.webp",
+    "role": "admin",
+    "createdAt": "2024-01-01",
+    "orders": []
+  },
+  {
+    "id": "2", 
+    "email": "user@gmail.com",
+    "password": "123456",
+    "name": "Nguyễn Văn A",
+    "avatar": "https://heucollege.edu.vn/upload/2025/10/anh-gai-dep-xinh-010.webp",
+    "role": "customer",
+    "createdAt": "2024-01-15",
+    "orders": [
+      {
+        "id": "ORD001",
+        "date": "2024-02-01",
+        "total": 1500000,
+        "status": "delivered",
+        "items": [
+          {
+            "productId": "1",
+            "name": "Gundam RX-78-2 Ver.Ka",
+            "price": 1500000,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]
